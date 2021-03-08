@@ -10,17 +10,32 @@
   </head>
 
   <body style = "background-color: #fffacd;"> <!--background-colorは背景、もじにマーカーとして表示も可能-->
-    <header class = "navbar" style = "background-color: #ffc0cb; height: 120px">
-      <div class="container">
-        <a href="/"><span class="title" style = "color: #0000ff; font-size: 40px">Practice</span></a>
-        <!--hrefを使用して文字列にリンクを作成,styleにて文字カラーを青に、文字サイズを設定-->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!--この構文があると、通常はリストが表示されない-->
-          <ul class="navbar-nav ml-auto">
-            <li><%= link_to "書籍一覧", books_path %>
-            <%= link_to "新規登録", new_book_path %></li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffc0cb; height: 120px;">
+      <!--navbar＝ナビゲーションバーの表示-->
+      <!--navbar-expand-[ブレークポイント]＝指定したブレークポイント（画面幅）に応じてナビゲーションバー、
+      ナビゲーションアイコン（ハンバーガーメニュー）を切り替えて表示-->
+      <!--navbar-[カラースキーム]＝ナビゲーションのカラースキームの指定-->
+        <div class="container"> <!--bootstrapの大きな箱?の部分-->
+        
+          <a href="/"><span class="title" style = "color: #0000ff; font-size: 40px">Practice</span></a>
+          <!--hrefを使用して文字列にリンクを作成,styleにて文字カラーを青に、文字サイズを設定-->
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--button要素のnavbar-togglerとspan要素のnavbar-toggler-iconがナビゲーションアイコン（ハンバーガーメニュー）の見た目に関わるところです。-->
+            <!--navbar-toggler＝ナビゲーションアイコン（ハンバーガーメニュー）の枠部分-->
+            <!--navbar-toggler-icon＝ナビゲーションアイコン（ハンバーガーメニュー）の三本線部分-->
+            
+          <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!--この構文があると、通常はリストが表示されない-->
+            <ul class="navbar-nav ml-auto">
+              <li><%= link_to "書籍一覧", books_path %></li>
+              <li><%= link_to "新規登録", new_book_path %></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <main>
