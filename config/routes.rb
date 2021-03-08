@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+  devise_for :users, controllers: {
+  sessions: 'users/sessions',
+  passwords: 'users/passwords',
+  registrations: 'users/registrations',
+}
+  
   devise_for :admins, controllers: {
-  sessions: 'admins/sessions'
+  sessions: 'admins/sessions', 
+  passwords: 'admins/passwords', #パスワード 
+  registrations: 'admins/registrations',  # 登録
 }
 
   resources :books
