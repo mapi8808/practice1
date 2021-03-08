@@ -28,7 +28,11 @@
             <!--navbar-toggler＝ナビゲーションアイコン（ハンバーガーメニュー）の枠部分-->
             <!--navbar-toggler-icon＝ナビゲーションアイコン（ハンバーガーメニュー）の三本線部分-->
             
-          <div class="collapse navbar-collapse" id="navbarNavDropdown"> <!--この構文があると、通常はリストが表示されない-->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown"> 
+          <!--ナビゲーションアイコンを開く前に隠しておきたいメニューは「collapse」classが付与された要素の中に入れておく-->
+          <!--「collapse」classを付与している要素に任意のidを付与する-->
+          <!--この文だけ記載しても画面にheaderのリストは表示されない、上記の内容も記載して、表示される。-->
+          
             <ul class="navbar-nav ml-auto">
               <li><%= link_to "書籍一覧", books_path %></li>
               <li><%= link_to "新規登録", new_book_path %></li>
@@ -44,11 +48,14 @@
 
     <footer>
       <div class="container">
-        <!--<div class="row">-->
-          <div class="text-center">
-            <p>練習用に作成しています</p>
+        <div class="row">
+          <div class="col-md-4" style = "font-size: 30px">
+            <p class = "text-center">practice</p>
           </div>
-        <!--</div>-->
+          <div class="col-md-8" style = "font-size: 30px">
+            <p class = "text-center">練習用に作成しています</p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
