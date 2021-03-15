@@ -14,10 +14,12 @@ Rails.application.routes.draw do
 
   scope module: :user do
     resources :books
+    resources :users
     root to: 'books#top'
   end  
   
   namespace :admin do
     resources :books
+    resources :users
   end
 end
