@@ -12,7 +12,12 @@ Rails.application.routes.draw do
   registrations: 'admins/registrations',  # 登録
 }
 
-  resources :books
-  root to: 'books#top'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  scope module: :user do
+    resources :books
+    root to: 'books#top'
+  end  
+  
+  namespace :admin do
+    resources :books
+  end
 end
