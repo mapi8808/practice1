@@ -9,3 +9,7 @@
       <td><h5 class="email"><%= @user.email %></h5></td>
     </tr>
 </table>
+
+<div>
+  <%= link_to "ユーザー情報編集", edit_user_path(current_user.id), class: "btn btn-primary" %>
+</div>
