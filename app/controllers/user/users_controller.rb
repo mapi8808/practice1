@@ -17,7 +17,8 @@ class User::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :image_id)
+    params.require(:user).permit(:name, :email, :image)
+    # image_idのカラムが入ってる場合、imageにすること。
   end
 
 end
