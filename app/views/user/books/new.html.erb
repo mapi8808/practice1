@@ -1,2 +1,12 @@
 <h1>書籍新規投稿</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<%= form_with model:@book, local:true do |f| %>
+  <h5>書籍の写真</h5>
+
+  <h5>書籍タイトル</h5>
+    <%= f.text_field :title %>
+  <h5>感想など</h5>
+    <%= f.text_area :body %>
+  <div>
+    <%= f.submit '投稿' %>
+  </div>
+<% end %>
