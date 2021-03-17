@@ -1,7 +1,7 @@
 <h1>書籍新規投稿</h1>
 <%= form_with model:@book, local:true do |f| %>
-  <h5>書籍の写真</h5>
-
+  <h5>書籍の画像</h5>
+    <%= f.attachment_field :image %>
   <h5>書籍タイトル</h5>
     <%= f.text_field :title %>
   <h5>感想など</h5>
