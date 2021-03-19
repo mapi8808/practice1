@@ -1,6 +1,6 @@
 <h1>書籍一覧</h1>
 <% @books.each do |book| %>
-
+<% @user = book.user %>
   <table> <!--書籍のブロック記載内容-->
     <tr>
       <td>
@@ -9,7 +9,7 @@
       <td>
         <h5 class="book-title">タイトル：<%= book.title %></h5>
         <h6 class="product-body">感想など：<%= book.body %></h6>
-        
+        <h5 class="user-name">投稿者：<%= user.name %></h5>
         <h6>投稿日：<%= book.created_at.strftime('%Y/%m/%d  %H:%M:%S') %></h6>
         <h6>最終更新日：<%= book.updated_at.strftime('%Y/%m/%d  %H:%M:%S') %></h6>
       </td>
