@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     resources :books
     resources :users
     root to: 'books#top'
+  get 'about' => 'books#about'
   end  
   
   namespace :admin do

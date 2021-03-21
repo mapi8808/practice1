@@ -39,12 +39,14 @@
                 <li><%= link_to "書籍新規投稿", new_book_path %></li>
                 <li><%= link_to "マイページ", user_path(current_user.id), class: "fas fa-id-card" %></li>
                 <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+                <li><%= link_to "当サイトについて", about_path %></li>
               <% elsif admin_signed_in? %> <!--サイト管理者ログイン時 -->
                 <li><%= link_to "書籍 一覧", admin_books_path, class: "fas fa-ice-cream" %></li>
                 <li><%= link_to "ログアウト", destroy_admin_session_path, method: :delete, class: "fas fa-user-times" %></li>
               <% else %>
                 <li><%= link_to "新規登録", new_user_registration_path %></li>
                 <li><%= link_to "ログイン", new_user_session_path %></li>
+                <li><%= link_to "当サイトについて", about_path %></li>
               <% end %>
             </ul>
           </div>

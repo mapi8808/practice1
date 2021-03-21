@@ -8,6 +8,7 @@ class User::BooksController < ApplicationController
   
   def index
     @books = Book.all
+    @user = User.name
   end
 
   def new
