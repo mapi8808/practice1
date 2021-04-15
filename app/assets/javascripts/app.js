@@ -5,4 +5,7 @@ var hello = 'Hello World';
 var int1 = 1;
 
 var int2 = 10;
-alert(int2);
+
+var float = 3.14;
+
+alert(float);
