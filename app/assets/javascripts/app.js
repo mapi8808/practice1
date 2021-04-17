@@ -8,4 +8,5 @@ var int2 = 10;
 
 var float = 3.14;
 
-alert(float);
+// alert(float);
+   alert(4 + 3);
