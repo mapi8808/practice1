@@ -22,4 +22,9 @@ var float = 3.14;
 // 割り算
 // alert(10 / 2);
 
-   alert("Hello" + "World")
+// alert("Hello" + "World")
+
+   var str1 = "Hello";
+   var str2 = "World";
+   
+   alert(str1 + str2)
