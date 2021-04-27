@@ -29,7 +29,7 @@ var float = 3.14;
    
    // alert(str1 + str2)
    
-   var orange = 100;
+   var orange = 150;
    var apple = 120;
    
    if (orange < apple) {
@@ -37,7 +37,7 @@ var float = 3.14;
    } else if (orange == apple) {
      alert("みかんとりんごは同じ金額");
    } else {
-      
+     alert("みかんの値段がりんごより高い");
    }
    
    
