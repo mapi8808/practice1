@@ -27,7 +27,17 @@ var float = 3.14;
    // var str1 = "Hello";
    // var str2 = "World";
    
-   var orange = 100;
-   var apple = 120
+   // alert(str1 + str2)
    
-   alert(str1 + str2)
+   var orange = 100;
+   var apple = 120;
+   
+   if (orange < apple) {
+     alert("'みかんの値段がりんごより安い'") ;
+   } else if (orange == apple) {
+     alert("みかんとりんごは同じ金額");
+   } else {
+      
+   }
+   
+   
