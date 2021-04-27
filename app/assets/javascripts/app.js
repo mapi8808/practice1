@@ -24,7 +24,10 @@ var float = 3.14;
 
 // alert("Hello" + "World")
 
-   var str1 = "Hello";
-   var str2 = "World";
+   // var str1 = "Hello";
+   // var str2 = "World";
+   
+   var orange = 100;
+   var apple = 120
    
    alert(str1 + str2)
