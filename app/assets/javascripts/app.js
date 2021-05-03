@@ -2,7 +2,7 @@
 
 var hello = 'Hello World';
 
-var int1 = 1;
+var int1 = 5;
 
 var int2 = 10;
 
